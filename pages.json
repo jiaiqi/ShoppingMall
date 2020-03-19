@@ -1,0 +1,215 @@
+{
+  "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/public/accountExec/accountExec",
+      "style": {
+        "navigationBarTitleText": "微信登录",
+        "navigationBarBackgroundColor": "#0055ff"
+      }
+    },
+    {
+      "path": "pages/public/home/home",
+      "style": {}
+    },
+    {
+      "path": "pages/public/login/login",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "navigationBarBackgroundColor": "#0bc99d"
+      }
+    },
+    {
+      "path": "pages/public/login/forget",
+      "style": {
+        "navigationBarTitleText": "忘记密码",
+        "navigationBarBackgroundColor": "#0bc99d"
+      }
+    },
+    {
+      "path": "pages/public/login/register",
+      "style": {
+        "navigationBarTitleText": "注册",
+        "navigationBarBackgroundColor": "#0bc99d"
+      }
+    }, {
+      "path": "pages/public/list/list",
+      "style": {}
+    }, {
+      "path": "pages/public/formPage/formPage",
+      "style": {}
+    }, {
+      "path": "pages/public/add/add",
+      "style": {}
+    },
+	// 公共页面分割线
+	{
+	      "path" : "pages/specific/shopmgt/shopmgt",
+	      "style" : {
+					"navigationBarTitleText":"店铺管理",
+					"navigationBarBackgroundColor": "#0bc99d"
+				}
+	  }
+	  ,{
+	      "path" : "pages/specific/mine/mine",
+	      "style" : {
+					"navigationBarTitleText":"我的",
+					"navigationBarBackgroundColor": "#0bc99d"
+				}
+	  },{
+	      "path" : "pages/specific/shoppingCart/shoppingCart",
+	      "style" : {
+					"navigationBarTitleText":"购物车",
+					"navigationBarBackgroundColor": "#0bc99d",
+					"enablePullDownRefresh":true
+				}
+	  },
+	{
+      "path": "pages/specific/shophome/shophome",
+      "style": {
+		  "navigationBarTitleText":"店铺首页",
+		  "navigationBarBackgroundColor": "#0bc99d"
+	  }
+    }, {
+      "path": "pages/specific/address/address",
+      "style": {
+			"navigationBarTitleText":"收获地址"
+      }
+    },
+	{
+	  "path": "pages/specific/placeOrders/placeOrders",
+	  "style": {
+		  "navigationBarTitleText":"创建订单",
+		  "navigationBarBackgroundColor": "#0bc99d"
+	  }
+	},{
+	  "path": "pages/specific/orderList/orderList",
+	  "style": {
+		  "navigationBarTitleText":"订单列表",
+		  "navigationBarBackgroundColor": "#0bc99d"
+	  }
+	}
+      
+        ,{
+            "path" : "pages/specific/index/index",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/specific/goodsDetail/goodsDetail",
+			  "style": {
+					"navigationBarTitleText":"商品详情"
+			  }
+        }
+	  ,{
+            "path" : "pages/specific/goodsList/goodsList",
+			  "style": {
+					"navigationBarTitleText":"商品"
+			  }
+        }		,{
+		    "path" : "pages/specific/address/addressManage",
+		    "style" : {}
+		}
+	
+		,{
+            "path" : "pages/specific/address/addressManage",
+			  "style": {
+					"navigationBarTitleText":"地址新增"
+			  }
+        }
+        ,{
+            "path" : "pages/specific/goodsmgt/goodsmgt",
+            "style" : {}
+        },
+		{
+		    "path" : "pages/specific/backOrderList/backOrderList",
+		    "style" : {}
+		}
+        ,{
+            "path" : "pages/specific/classify/classify",
+            "style" : {
+              "navigationBarTitleText":"商品分类",
+              "navigationBarBackgroundColor": "#0bc99d"
+            }
+        },
+		{
+		    "path" : "pages/specific/sharephoto/sharetwo",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/specific/member/member",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/specific/vipClassify/vipClassify",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/specific/vipClassify/vipDetail",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/specific/commissionRecord/agent",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/specific/commissionRecord/commissionRecord",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/specific/commissionRecord/reseller",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/specific/sharephoto/sharehtml",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/specific/commissionRecord/cash",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/specific/commissionRecord/mingxi",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/specific/commissionRecord/record",
+		    "style" : {}
+		}
+    ],
+  "globalStyle": {
+    // "navigationBarTitleText": "百想软件开发平台",
+    // "navigationBarBackgroundColor": "#0bc99d",
+    // "backgroundColor": "#F8F8F8"
+  }
+  // "tabBar": {
+  // 	"color" : "#7A7E83",
+  // 	"selectedColor" : "#007AFF",
+  // 	"borderStyle" : "black",
+  // 	"backgroundColor" : "#F8F8F8",
+  // 	"list":[
+  // 		{
+  // 		    "pagePath" : "pages/index/index",
+  // 		    "iconPath" : "static/tab_class.png",
+  // 		    "selectedIconPath" : "static/tab_class.png",
+  // 		    "text" : "首页"
+  // 		},
+  // 		{
+  // 		    "pagePath" : "pages/course/course",
+  // 		    "iconPath" : "static/tab_course.png",
+  // 		    "selectedIconPath" : "static/tab_course.png",
+  // 		    "text" : "课程"
+  // 		},
+  // 		{
+  // 		    "pagePath" : "pages/classification/classification",
+  // 		    "iconPath" : "static/tab_class.png",
+  // 		    "selectedIconPath" : "static/tab_class.png",
+  // 		    "text" : "分类"
+  // 		},
+  // 		{
+  // 		    "pagePath" : "pages/profile/profile",
+  // 		    "iconPath" : "static/tab_profile.png",
+  // 		    "selectedIconPath" : "static/tab_profile.png",
+  // 		    "text" : "我的"
+  // 		}
+  // 	]
+  // }
+}
