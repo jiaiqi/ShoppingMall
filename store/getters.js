@@ -109,5 +109,11 @@ export default {
   },
   getUpUser(state,up_user){
     return state.up_user
+  },
+  getBackUrl(state,backUrl){
+    return state.backUrl
+  },
+  getWxUserInfo(state,wxUserInfo){
+    return state.wxUserInfo
   }
 }

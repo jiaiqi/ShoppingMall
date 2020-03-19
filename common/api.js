@@ -18,7 +18,7 @@ let remoteAddress = {
 		isReg:true,
 		data:{
 			"shop_no":"1485038452",  // 店铺编号
-			"up_user_no":""// 1.有邀请用户。"" 2."商家邀请"。  3.用户自主进入，无邀请用户."自主加入"
+			"up_user_no":""// 1.有邀请用户。"" 2."商家邀请"。  3.用户自主进入，无邀请用户."自主进入"
 		}
 	},
 	// homePath:"/pages/specific/home/home", // 首页路径， 配置完整路径

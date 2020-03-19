@@ -56,6 +56,8 @@ const state = {
   shopInfo:{},  //商家信息
   vipInfo:{},   //会员信息
   up_user:'',//分享人
+  backUrl:"",// 回调url
+  wxUserInfo:{},//微信用户信息
 }
 
 const mutations = {
@@ -193,6 +195,12 @@ const mutations = {
   },
   setUpUser(state,up_user){
     state.up_user = up_user
+  },
+  setBackUrl(state,backUrl){
+	   state.backUrl = backUrl
+  },
+  setWxUserInfo(state,wxUserInfo){
+    state.wxUserInfo = wxUserInfo
   }
 }
 

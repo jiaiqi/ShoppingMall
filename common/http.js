@@ -35,8 +35,13 @@ fly.interceptors.request.use((request) => {
 			console.log(/n/,urlParams.indexOf("&"))
 			// 加一个保存商家分享的场景。
       let upUser = urlParams.slice(urlParams.indexOf("up_user")+8,urlParams.indexOf("&"))
+      if(urlParams.indexOf("up_user")!=-1&&urlParams.indexOf("&")!==-1){
+        upUser = urlParams.slice(urlParams.indexOf("up_user")+8,urlParams.indexOf("&"))
+      }else if(urlParams.indexOf("up_user")!=-1&&urlParams.indexOf("&")===-1){
+        upUser = urlParams.slice(urlParams.indexOf("up_user")+8)
+      }
 			uni.setStorageSync("up_user",upUser)
-      store.commit('setUpUser',upUser)
+			store.commit('setUpUser',upUser)
 		}
 		// console.log("requrl",window.location.pathname + window.location.search,window.location)
 	}
@@ -101,6 +106,7 @@ fly.interceptors.response.use(
 					let requestUrl =decodeURIComponent(res.request.headers.requrl)
 					if(res.request.headers.requrl && res.request.headers.requrl !== '/' && res.request.headers.requrl.indexOf("code") === -1){
 						//  过滤无效的url
+						store.commit('setBackUrl',requestUrl)
 						uni.setStorageSync("backUrl",requestUrl)	
 					}
 					try{

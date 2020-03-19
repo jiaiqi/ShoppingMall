@@ -183,7 +183,7 @@ export default {
           fieldInfo.options = item.option_list_v2
         } else if (item.col_type === "MultilineText") {
           fieldInfo.type = "textarea"
-        } else if (item.col_type === "Money") {
+        } else if (item.col_type === "Money" || item.col_type === "float") {
           fieldInfo.type = "digit"
         } else if (item.col_type === "Integer" || item.col_type === "int") {
           fieldInfo.type = "number"

@@ -32,7 +32,7 @@
 			return {
 				list: [],
 				listboole:false,
-				money:''
+				money:'-'
 			};
 		},
 		onLoad() {

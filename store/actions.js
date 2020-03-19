@@ -78,5 +78,11 @@ export default {
   },
   setUpUser:({commit},payload)=>{
     commit('setUpUser', payload)
+  },
+  setBackUrl:({commit},payload)=>{
+    commit('setBackUrl', payload)
+  },
+  setWxUserInfo(state,payload){
+    commit('setBackUrl', payload)
   }
 }

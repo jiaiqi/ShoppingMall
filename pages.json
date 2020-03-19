@@ -173,6 +173,10 @@
 		{
 		    "path" : "pages/specific/commissionRecord/record",
 		    "style" : {}
+		},
+		{
+		    "path" : "pages/specific/commissionRecord/businessData",
+		    "style" : {}
 		}
     ],
   "globalStyle": {

@@ -86,8 +86,6 @@ export default {
 						let lazyImage = item.target
 						 let imgUrl = item.target.dataset.src
 				        if(item.isIntersecting){
-							console.log("在视口",item.isIntersecting,this.item.title,item.target.dataset,self.item[self.imgColName])
-							console.log("lazyImage",imgUrl)
 							 
 							 
 				            // item.target.childNodes[0].style.backgroundImage =  "url("+ item.target.dataset.src +")"
@@ -100,7 +98,6 @@ export default {
 							
 							// observer.unobserve(lazyImage)       
 				        }else{
-							console.log("不在视口",item.isIntersecting,this.item.title)
 						}
 				    })
 				})

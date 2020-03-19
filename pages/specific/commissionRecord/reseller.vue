@@ -56,7 +56,7 @@
 						url:"/pages/specific/commissionRecord/mingxi"
 					}
 				],
-				money:{}
+				money:{'yesterdayEarnings':'-','atPresentComm':'-','totalExtract':'-'}
 			}
 		},
 		onLoad() {

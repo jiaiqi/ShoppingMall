@@ -56,7 +56,7 @@
 						{
 							"colName": "up_user_no",
 							"ruleType": "eq",
-							"value": 'zhangj'
+							"value": userNo
 						},
 						 {
 							"colName": "shop_no",

@@ -195,12 +195,8 @@
 				// 		})					
 				// 	})
 				let that = this
-				let user_no = uni.getStorageSync('login_user_info').user_no
-				let cond = [{
-					"colName": "user_no",
-					"ruleType": "eq",
-					"value": user_no
-				}]
+				// let user_no = uni.getStorageSync('login_user_info').user_no
+				let cond = []
 				let tabData = this.orderTypeLise
 					this.getClassify("srvshop_order_select","state",cond).then(tabCount=>{
 						that.getClassify("srvshop_order_select","order_state",cond).then(tabCountTwo=>{

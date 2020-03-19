@@ -1,8 +1,8 @@
 <template>
-	<view>
+	<view class="bx-tree-selector bg-white">
 		<view class="padding-sm flex flex-wrap" @click="onShowModal">
 			
-			<view class="padding-sm flex flex-wrap">
+			<view class="flex flex-wrap">
 				<view v-if="!isTree && selected.length > 0" class="" v-for="(item,index) in selected" :key="index">
 					<view class="cu-tag cf line-green padding-xs"  :class="shape === 'round' ? 'round' :''">
 						{{item[options.key_disp_col]}}
@@ -40,7 +40,7 @@
 				<view class="padding-xl">
 					<view  v-if="!isTree">
 						<view class="padding-sm flex flex-wrap" v-if="treeDatas.length > 0">
-							<view class="padding-xs" v-for="(item,index) in treeDatas" :key="index" @click="onSelected(item)">
+							<view class="padding-xl" v-for="(item,index) in treeDatas" :key="index" @click="onSelected(item)">
 								<view class="cu-tag " :class="isInSelected(item) ? 'line-green' : 'line-blue'">
 								{{item[options.key_disp_col]}}
 								<text v-if="isInSelected(item)" class="fr lg text-green cuIcon-check"></text>
@@ -490,6 +490,13 @@
 </script>
 
 <style lang="less" scoped>
+	.bx-tree-selector{
+		
+	}
+	.cu-tag{
+		height: 48upx;
+		line-height: 48upx;
+	}
 .cu-modal{
 	z-index: 9999;
 }

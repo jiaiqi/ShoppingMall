@@ -332,7 +332,7 @@
 			/** 更新及获取tab数字*/
 			updateTabNum(){
 				let that = this
-				let user_no = uni.getStorageSync('login_user_info').user_no
+				// let user_no = uni.getStorageSync('login_user_info').user_no
 				let cond = []
 				let tabData = this.tabData
 					this.getClassify("srvshop_order_select","state",cond).then(tabCount=>{
@@ -406,7 +406,7 @@
 			},
 			findCurrent(option){
 				let shop_no = uni.getStorageSync('shopNo')
-				let user_no = uni.getStorageSync('login_user_info').user_no
+				// let user_no = uni.getStorageSync('login_user_info').user_no
 				let conditionObj = {}
 				let tab = option
 				let conditions = [{

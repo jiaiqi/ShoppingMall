@@ -11,7 +11,7 @@
 		  :rowButtons="listConfig.rowButtons"
 		  :searchColumn="''"
 		  :srvApp="listConfig.srvApp"
-		  :rownumber="5"
+		  :rownumber="10"
 		  :heightStyle="listConfig.heightStyle"
 		  :fixed="false"
 		  @click-list-item="clickItem"

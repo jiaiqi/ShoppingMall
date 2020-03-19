@@ -112,6 +112,17 @@ export default {
     };
   },
   props: {
+	  
+	  // 是否允许下拉刷新
+	  enablePullDown: {
+	    type: Boolean,
+	    default: true
+	  },
+	  // 是否允许上拉加载
+	  enablePullUp: {
+	    type: Boolean,
+	    default: true
+	  },
 	 // height
 	  heightStyle: {
 	    type: String,
@@ -233,11 +244,6 @@ export default {
     // 下拉配置
     // 下拉回掉，参数为vm
     pullDown: Function,
-    // 是否允许下拉刷新
-    enablePullDown: {
-      type: Boolean,
-      default: true
-    },
     downOffset: {
       type: Number,
       default: 100

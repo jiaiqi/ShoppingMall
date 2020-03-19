@@ -273,13 +273,9 @@
 			},
 			/** 组装所需要的condition*/
 			findCurrent(option){
-				let user_no = uni.getStorageSync('login_user_info').user_no
+				// let user_no = uni.getStorageSync('login_user_info').user_no
 				let conditionObj = {}
 				let conditions = [{
-					"colName": "user_no",
-					"ruleType": "eq",
-					"value": user_no
-				},{
 					"colName": "state",
 					"ruleType": "notnull",
 				}]
@@ -332,12 +328,8 @@
 				// 		})					
 				// 	})
 				let that = this
-				let user_no = uni.getStorageSync('login_user_info').user_no
-				let cond = [{
-					"colName": "user_no",
-					"ruleType": "eq",
-					"value": user_no
-				}]
+				// let user_no = uni.getStorageSync('login_user_info').user_no
+				let cond = []
 				let tabData = this.tabData
 					this.getClassify("srvshop_order_select","state",cond).then(tabCount=>{
 						that.getClassify("srvshop_order_select","order_state",cond).then(tabCountTwo=>{
@@ -353,11 +345,7 @@
 								tabData.forEach(tab=>{
 									let hasOnly = false
 									if(tab.label === "全部"){
-										let conds = [{
-											"colName": "user_no",
-											"ruleType": "eq",
-											"value": user_no
-										}]
+										let conds = []
 										let reqs = {
 											"serviceName": "srvshop_order_select",
 											"colNames": ["*"],

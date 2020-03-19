@@ -6,6 +6,8 @@
 			:heightStyle="heightStyle"
 			:pullDown="pullDown" 
 			:pullUp="loadData"
+			:enablePullDown="enablePullDown"
+			:enablePullUp="enablePullUp"
 			:top="top"
 			:fixed="fixed"
 			:bottom="bottom"
@@ -94,6 +96,17 @@ export default {
 	},
 	mounted() {},
 	props: {
+		
+		// 是否允许下拉刷新
+		enablePullDown: {
+		  type: Boolean,
+		  default: true
+		},
+    // 是否允许上拉加载
+    enablePullUp: {
+      type: Boolean,
+      default: true
+    },
 		//是否是详情列表
 		detailList:{
 		   type: Boolean,

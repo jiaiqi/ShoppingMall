@@ -4,9 +4,9 @@
 			<view class="crip">
 				<text class="textIcon" v-if="!isInvalid(item[options.images])">{{ item[options.key_disp_col][0] }}</text>
 				<image mode="aspectFill" :onerror="item[options.images]=''" class="item-img shadow shadow-lg" v-if="isInvalid(item[options.images])" :src="options.images !== '' ? item[options.images] : ''" >
-					<!-- <view class="cu-tag badge" v-if="item.badge!=0">
+					<view class="cu-tag badge" v-if="item.hasOwnProperty('badge') && item.badge!=0">
 						<block v-if="item.badge!=1">{{item.badge>99?'99+':item.badge}}</block>
-					</view> -->
+					</view>
 				</image>
 				<view  v-if="options.images === ''" :class="['cuIcon-' + item.cuIcon,'text-' + item.color]">
 					<!-- <view class="cu-tag badge" v-if="item.badge!=0">

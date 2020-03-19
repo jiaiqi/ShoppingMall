@@ -96,9 +96,20 @@ export default {
        * 新用户添加到会员表
        */
       Vue.prototype.addToVipList = async function(e) {
+        // {
+        //   name:wxUserInfo.nickname,
+        //   mobile:wxUserInfo.mobile,
+        //   headimgurl:wxUserInfo.headimgurl,
+        //   user_no: user_no,
+        //   up_user_no: up_user_no
+        // };
+        console.log('addVip:',e)
         let req = [{
           "serviceName": "srvvip_member_up_add",
           "data": [{
+            "name":e.nickname,
+            "headimgurl":e.headimgurl,
+            "mobile":e.mobile,
             "user_no": e.user_no, //用户编号 （必填）
             "up_user_no": e.up_user_no, //上级用户编号
             "join_type": "扫码加入", //'普通加入','链接加入','扫码加入'
@@ -106,12 +117,15 @@ export default {
           }]
         }]
         let cond = []
-        let res = await this.onRequest("select", "srvvip_member_up_add", reqs, "vip")
-        if(res.data.state==="SUCCESS"){
-          alert(JSON.stringify(res.data.data))  
+        let res = await this.onRequest("operate", "srvvip_member_up_add", req, "vip")
+        if (res.data.state === "SUCCESS") {
           return res.data.data
-        }else{
-          alert(JSON.stringify(res.data))
+        } else {
+          // uni.showToast({
+          //   title: res.data.resultMessage,
+          //   icon: 'none'
+          // })
+          // alert(JSON.stringify(res.data))
         }
       }
   }
