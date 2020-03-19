@@ -7,7 +7,8 @@ import common from '@/common/common.js' // 公共方法
 import bxUtil from '@/common/util.js' // 公共方法
 // let fly = new flyio
 import fly from '@/common/http.js'  // fly 请求拦截
-
+// import VConsole from 'vconsole'
+// var vConsole = new VConsole();
 
 import devUtil from '@/static/js/dev_util.js' // 公共方法
 
